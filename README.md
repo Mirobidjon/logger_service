@@ -1,11 +1,9 @@
 # logger_service
 
-Logger service is Stores 4 RMQ consumers listening to the 
-queues exchange "logger" routes to. Messages differ in the 
-level of logging:
-    1. consumer1 - consumes messages with level "debug" and
-    2. consumer2 - consumes messages with level "info" and
-    3. consumer3 - consumes messages with level "error" and
+### Logger service is Stores 4 RMQ consumers listening to the queues exchange "logger" routes to. Messages differ in the level of logging:
+    1. consumer1 - consumes messages with level "debug".
+    2. consumer2 - consumes messages with level "info".
+    3. consumer3 - consumes messages with level "error".
     4. consumer4 - consumes messages with all level of logging.
 
 ## Installation
