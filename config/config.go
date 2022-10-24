@@ -78,10 +78,10 @@ func Load() Config {
 	config.PasscodePool = cast.ToString(getOrReturnDefaultValue("PASSCODE_POOL", "0123456789"))
 	config.PasscodeLength = cast.ToInt(getOrReturnDefaultValue("PASSCODE_LENGTH", "6"))
 
-	config.RabbitMqURL = cast.ToString(getOrReturnDefaultValue("RABBIT_MQ_URL", "amqp://userpool:qwerty@localhost:5532/"))
+	config.RabbitMqURL = cast.ToString(getOrReturnDefaultValue("RABBIT_MQ_URL", "amqp://guest:guest@localhost:5672/"))
 	config.ExchangeName = cast.ToString(getOrReturnDefaultValue("EXCHANGE_NAME", "v1.phone"))
 
-	config.RestServiceURL = cast.ToString(getOrReturnDefaultValue("REST_SERVICE_URL", "http://localhost:8090"))
+	config.RestServiceURL = cast.ToString(getOrReturnDefaultValue("REST_SERVICE_URL", "http://localhost:80"))
 
 	return config
 }
